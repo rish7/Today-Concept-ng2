@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+.content p span.bold{
+    font-weight:700;
+    color:#fff;
+}
+
+.md-hint{
+    color:#888;
+    font-size: 65%!important;
+}
+.cdk-overlay-container{
+    z-index: 99999;
+}

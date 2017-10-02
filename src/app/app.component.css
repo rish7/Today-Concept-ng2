@@ -1,0 +1,69 @@
+header{
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 99999;
+    background: #00bcd4 none repeat scroll 0 0;
+    color: #fff;
+    width:100%;
+    opacity: 0.9;
+}
+header h1{
+    padding:0px 20px;
+}
+nav.appNavbar{
+    
+    padding: 8px 16px;
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    
+}
+
+nav.appNavbar a{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border: medium none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: currentcolor;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 0;
+    min-width: 88px;
+    outline: 0 none;
+    padding: 0 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-transform: uppercase;
+    background: transparent none repeat scroll 0 0;
+    cursor: default;
+}
+
+nav.appNavbar a:hover{
+    background: rgba(0, 0, 0, 0.17) none repeat scroll 0 0;
+}
+
+section.content{
+    padding:150px 0px 0px 0px;
+}
+
+.loader{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+md-progress-spinner.md-primary{
+    position: relative;
+    top: 250px;
+    left:45%;
+}

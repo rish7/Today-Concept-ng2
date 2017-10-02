@@ -1,0 +1,16 @@
+
+<md-input dividerColor="{{dividerColor}}" [ngModel]="keyword"
+(keyup.enter)="startSearch($event)"
+(ngModelChange)="onChange($event)" maxlength="20" hintLabel="{{hintLabelText}}" placeholder="Enter search text" #characterCountHint>
+<md-hint align="end">{{characterCountHint.characterCount}} / 20</md-hint>
+</md-input>
+<div class="search-content">
+<div *ngIf="!noData">
+    <div class="pagination"><a routerLink="/search/{{currentWord}}/{{previousNumber}}" class="previous" *ngIf="currentPage > 1">< Previous</a>Page <span class="bold">{{currentPage}}</span> of {{numberOfPages}}<a routerLink="/search/{{currentWord}}/{{nextNumber}}" class="next" *ngIf="currentPage < numberOfPages">Next ></a></div>
+    <div class="posts"><card-view *ngFor="let post of posts" [post]="post" [flytype]="flytype"></card-view></div>
+    <div class="pagination"><a routerLink="/search/{{currentWord}}/{{previousNumber}}" class="previous" *ngIf="currentPage > 1">< Previous</a>Page <span class="bold">{{currentPage}}</span> of {{numberOfPages}}<a routerLink="/search/{{currentWord}}/{{nextNumber}}" class="next" *ngIf="currentPage < numberOfPages">Next ></a></div>
+</div>
+<div *ngIf="noData" class="nodata">
+    No data..!, start searching again with new word.
+</div>
+</div>

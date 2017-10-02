@@ -1,0 +1,16 @@
+<header>
+<h1>
+  {{title}}
+</h1>
+<nav class="appNavbar">
+  <a routerLink="/posts/page/1">Home</a>
+  <a routerLink="/search">Search</a>
+  <a href="javascript:void(0)" *ngIf="!isMobile" (click)="openQrPopup($event);">📲 Continue in mobile</a>
+</nav>
+</header>
+<section class="content">
+<router-outlet></router-outlet>
+</section>
+<div class="loader" *ngIf="active">
+<md-progress-spinner *ngIf="active" mode="indeterminate"></md-progress-spinner>
+</div>

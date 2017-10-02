@@ -1,0 +1,38 @@
+md-input{
+    width: 100%;
+    font-size:140%;
+}
+
+.search-content{
+    padding: 20px 0px 0px 0px;
+}
+
+.pagination{
+    clear: both;
+    font-size: 16px;
+    text-align: center;
+    width:100%;
+}
+.pagination a.previous, .pagination a.next{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color:#00bcd4;
+    margin: 0px 10px;
+}
+
+.pagination a.previous:hover, .pagination a.next:hover{
+    background: rgba(0, 0, 0, 0.17) none repeat scroll 0 0;
+}
+.pagination span.bold{
+    font-weight: bold;
+}
+div.posts{
+    min-height: 250px;
+}
+
+div.nodata{
+    font-size: 20px;
+    text-align: center;
+    color:#777;
+}

@@ -1,0 +1,8 @@
+<div *ngIf="!noData">
+    <div class="pagination"><a routerLink="/posts/page/{{previousNumber}}" class="previous" *ngIf="currentPage > 1">< Previous</a>Page <span class="bold">{{currentPage}}</span> of {{numberOfPages}}<a routerLink="/posts/page/{{nextNumber}}" class="next" *ngIf="currentPage < numberOfPages">Next ></a></div>
+    <div class="posts"><card-view *ngFor="let post of posts" [post]="post" [flytype]="flytype"></card-view></div>
+    <div class="pagination"><a routerLink="/posts/page/{{previousNumber}}" class="previous" *ngIf="currentPage > 1">< Previous</a>Page <span class="bold">{{currentPage}}</span> of {{numberOfPages}}<a routerLink="/posts/page/{{nextNumber}}" class="next" *ngIf="currentPage < numberOfPages">Next ></a></div>
+</div>
+<div *ngIf="noData">
+    No Data..!
+</div>

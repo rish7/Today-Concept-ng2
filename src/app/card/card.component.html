@@ -1,0 +1,21 @@
+<div class="container" [@flyInOut]="flyInOutState">
+    <h2 mdTooltip="{{post.title | uppercase}}">{{post.title | uppercase}}</h2>
+    <p class="detail">{{post.description | ridhtml | ellipsize:200 }}</p>
+
+    <md-chip-list>
+        <md-chip *ngFor="let tag of post.tags;">{{tag}}</md-chip>
+    </md-chip-list>
+    <div class="button-wrapper" [ngClass]="{true:'clicked', false:''}[showInfo]">
+        <div class="layer"></div>
+        <button class="main-button fa fa-info" (click)="infoClicked($event)">
+          <div class="ripple" [ngClass]="{true:'rippling', false:''}[showInfo]"></div>
+      </button>
+    </div>
+
+    <div class="layered-content" [ngClass]="{true:'active', false:''}[showInfo]">
+        <button class="close-button fa fa-times" (click)="closeClicked($event)"></button>
+        <div class="content">
+            <p [innerHTML]="post.description"></p>
+        </div>
+    </div>
+</div>
