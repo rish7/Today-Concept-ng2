@@ -39,8 +39,6 @@ h2 {
     width: 50px;
     height: 100%;
     position: absolute;
-    bottom: 0;
-    right: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -246,7 +244,6 @@ button {
 
 
 .container {
-    width: 330px;
     height: 300px;
     margin: 1%;
     position: relative;
