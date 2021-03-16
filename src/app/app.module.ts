@@ -43,7 +43,6 @@ const appRoutes: Routes = [
   { path: '**', component: PostsComponent }
 ];
 
-//enableProdMode();
 
 @NgModule({
   declarations: [

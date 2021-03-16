@@ -13,7 +13,6 @@ export class QrcodeComponent {
   currentUrl:string = "";
   constructor(public dialogRef: MdDialogRef<QrcodeComponent>, location:Location) { 
     this.currentUrl = "https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=http://dev3.shareourideas.com/words/%23"+encodeURIComponent(location.path()) + "&choe=UTF-8";
-    //console.debug(this.currentUrl);
   }
 }
 

@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Jsonp } from '@angular/http';
 import { Observable }     from 'rxjs/Observable';
-//import { Observable }     from 'rxjs/Rx';
 import {SpinnerService} from "./spinner.service"
 
 

@@ -36,7 +36,7 @@ export class CardComponent implements OnInit {
   constructor() { }
   /* Component life cycle events */
   ngOnInit() {
-    //this.flyInOutState = "in";
+    /* //this.flyInOutState = "in"; */
   }
 
   /*Inputs here*/    
@@ -47,8 +47,8 @@ export class CardComponent implements OnInit {
   get post(): any { return this._post; }
 
   @Input()
-  set flytype(state: string){
-    this.flyInOutState = state;
+  set flytype(stateValue: string){
+    this.flyInOutState = stateValue;
   }
   get flytype(): string {return this.flyInOutState; }
 

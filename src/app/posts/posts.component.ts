@@ -3,9 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { CardComponent } from '../card/card.component';
 
 import { PagedataService } from '../services/pagedata.service';
-import { WebclientService } from '../services/webclient.service'
-import { SpinnerService } from "../services/spinner.service"
-//import './rxjs-operators';
+import { WebclientService } from '../services/webclient.service';
+import { SpinnerService } from "../services/spinner.service";
 
 @Component({
   selector: 'app-posts',
